@@ -15,7 +15,7 @@ var config = {
   ],
   output: {
     path: buildPath,
-    publicPath: '/assets/',
+    publicPath: '/build/assets/',
     filename: 'bundle.js'
   },
   plugins: [
@@ -34,6 +34,9 @@ var config = {
   },
   eslint: {
     configFile: '.eslintrc'
+  },
+  postcss: function () {
+    return [require('autoprefixer')]
   },
   module: {
     preLoaders: [
@@ -57,7 +60,7 @@ var config = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'postcss-loader')
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

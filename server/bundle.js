@@ -38,7 +38,7 @@ module.exports = function() {
         }
     });
 
-    bundler.listen(8090, 'localhost', function() {
+    bundler.listen(8090, '0.0.0.0', function() {
         console.log('Bundling project, please wait...');
     });
 

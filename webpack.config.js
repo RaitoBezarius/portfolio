@@ -9,13 +9,13 @@ var mainModulesPath = path.join(__dirname, 'src');
 var config = {
   devtool: 'eval',
 	entry: [
-    'webpack-dev-server/client?http://localhost:8090',
+    'webpack-dev-server/client?http://pythagore.xyz:8090',
     'webpack/hot/dev-server',
     mainPath
   ],
   output: {
     path: buildPath,
-    publicPath: '/public/',
+    publicPath: '/build/public/',
     filename: 'bundle.js'
   },
 	plugins: [
@@ -27,6 +27,9 @@ var config = {
 	},
   eslint: {
     configFile: '.eslintrc'
+  },
+  postcss: function () {
+    return [require('autoprefixer')]
   },
 	module: {
     preLoaders: [
@@ -41,6 +44,10 @@ var config = {
 			{
         test: /\.json$/,
         loader: "json-loader"
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
       },
 			{
         test: /\.jsx?$/,
