@@ -1,0 +1,10 @@
+body {
+	background-attachement: scroll;
+	background-clip: border-box;
+	background-image: url(~assets/background_pattern.png);
+	background-size: auto;
+}
+
+.portfolio-container {
+	display: flex;
+}
