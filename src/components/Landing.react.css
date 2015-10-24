@@ -1,0 +1,31 @@
+.landing-section {
+    margin: auto;
+}
+
+.landing-article {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-article-head {
+    font-family: 'Pacifico';
+    font-size: 6em;
+    color: #FF8C0B;
+    margin: auto;
+}
+
+.landing-article-presentation {
+    font-family: 'Merriweather';
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.landing-article-presentation-details {
+    font-family: 'Merriweather';
+}
+
+.landing-ability {
+    color: #FF8C0B;
+}
