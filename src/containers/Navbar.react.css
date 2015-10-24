@@ -1,0 +1,24 @@
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    flex: 1 0 auto;
+}
+
+.navbar-brand-text {
+    font-family: 'Sanchez';
+}
+
+.navbar-nav > a {
+    padding: 15px;
+    font-family: 'Lato';
+}
+
+.navbar-nav > a:last-child {
+    margin-right: 20px;
+}
