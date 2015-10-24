@@ -1,0 +1,19 @@
+.projects-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-headlines {
+    margin: 0 auto 0 auto;
+}
+
+.projects-headline-head {
+    font-family: 'Pacifico';
+    font-size: 2em;
+}
+
+.projects-showcase {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}

@@ -4,6 +4,7 @@ import Router, {Route, DefaultRoute} from 'react-router';
 import Application from 'containers/Application.react';
 import Landing from 'components/Landing.react';
 import Contact from 'components/Contact.react';
+import Projects from 'components/Projects.react';
 
 const Routes = (
   <Route handler={Application}>
@@ -12,6 +13,8 @@ const Routes = (
       name="home" />
     <Route handler={Contact}
       name="contact" />
+    <Route handler={Projects}
+      name="projects" />
 	</Route>
 );
 
