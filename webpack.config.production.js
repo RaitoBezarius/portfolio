@@ -16,7 +16,7 @@ var config = {
   ],
   output: {
     path: buildPath,
-    publicPath: '/build/public/',
+    publicPath: '/build/',
     filename: 'bundle.js'
   },
   plugins: [
@@ -63,7 +63,7 @@ var config = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'postcss-loader')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -75,6 +75,10 @@ var config = {
       },
       {
         test: /\.png$/,
+        loader: 'url-loader?limit=100000'
+      },
+      {
+        test: /\.gif$/,
         loader: 'url-loader?limit=100000'
       },
       {
