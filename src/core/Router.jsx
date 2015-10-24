@@ -2,13 +2,16 @@ import React from 'react';
 import Router, {Route, DefaultRoute} from 'react-router';
 
 import Application from 'containers/Application.react';
-import Home from 'components/Home.react';
+import Landing from 'components/Landing.react';
+import Contact from 'components/Contact.react';
 
 const Routes = (
   <Route handler={Application}>
-    <DefaultRoute handler={Home} />
-    <Route handler={Home}
+    <DefaultRoute handler={Landing} />
+    <Route handler={Landing}
       name="home" />
+    <Route handler={Contact}
+      name="contact" />
 	</Route>
 );
 
