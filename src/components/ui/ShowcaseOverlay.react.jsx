@@ -7,17 +7,15 @@ import './ShowcaseOverlay.react.css';
 
 export default class ShowcaseOverlay extends React.Component {
   static propTypes = {
-    imagesSrc: React.PropTypes.array.isRequired,
-    alt: React.PropTypes.string.isRequired,
-    children: React.PropTypes.array.isRequired
+    imagesSrc: React.PropTypes.array.isRequired
   }
 
   render() {
     return (
       <section className="showcase-overlay">
-        {this.props.imagesSrc.map(imgSrc => {
+        {this.props.imagesSrc.map((imgSrc, id) => {
           return (
-            <ResponsiveImage className="showcase-blur" src={imgSrc} alt="Make your business succeed" />
+            <ResponsiveImage key={id} className="showcase-blur" src={imgSrc} alt="Make your business succeed" />
           );
         })}
         <section>
