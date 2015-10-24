@@ -5,6 +5,7 @@ var nodeModulesPath = path.join(__dirname, 'node_modules');
 var buildPath = path.join(__dirname, 'build');
 var mainPath = path.join(__dirname, 'src', 'app.js');
 var mainModulesPath = path.join(__dirname, 'src');
+var fontsPath = path.join(__dirname, 'src', 'assets', 'fonts');
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -15,7 +16,7 @@ var config = {
   ],
   output: {
     path: buildPath,
-    publicPath: '/build/assets/',
+    publicPath: '/build/public/',
     filename: 'bundle.js'
   },
   plugins: [
@@ -36,7 +37,9 @@ var config = {
     configFile: '.eslintrc'
   },
   postcss: function () {
-    return [require('autoprefixer')]
+    return [require('autoprefixer'), require('postcss-font-magician')({
+      hosted: fontsPath
+    })]
   },
   module: {
     preLoaders: [
