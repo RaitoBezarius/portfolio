@@ -3,6 +3,8 @@ import React from 'react';
 import ShowcaseOverlay from 'components/ui/ShowcaseOverlay.react';
 import './Landing.react.css';
 
+import is from 'is_js';
+
 export default class Landing extends React.Component {
   render() {
     const imagesToShowcase = [
@@ -14,7 +16,7 @@ export default class Landing extends React.Component {
 
     return (
       <section className="landing-section">
-        <ShowcaseOverlay imagesSrc={imagesToShowcase} />
+        {is.not.mobile() && <ShowcaseOverlay imagesSrc={imagesToShowcase} />}
         <article className="landing-article">
           <h1 className="landing-article-head">
             Tutturu!
