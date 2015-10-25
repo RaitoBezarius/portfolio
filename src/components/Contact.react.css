@@ -1,0 +1,39 @@
+.space-overwrite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-head {
+    font-family: 'Merriweather';
+    font-size: 3.5em;
+    color: #fff;
+    margin: 15% 25% 0 15%;
+}
+
+.contact-cta {
+    font-family: 'Sanchez';
+    text-transform: uppercase;
+    border-radius: 28px;
+    background: #4200FF;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 1rem 40rem 1rem 40rem;
+}
+
