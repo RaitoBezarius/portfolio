@@ -59,6 +59,10 @@ var config = {
         loaders: ['react-hot', 'babel-loader?stage=0&cacheDirectory']
       },
       {
+        test: /is_js/,
+        loader: 'imports?define=>undefined'
+      },
+      {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader?limit=10000&minetype=application/font-woff"
       },

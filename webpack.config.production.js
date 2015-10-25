@@ -62,6 +62,10 @@ var config = {
         loader: 'babel-loader?stage=0&cacheDirectory'
       },
       {
+        test: /is_js/,
+        loader: 'imports?define=>undefined'
+      },
+      {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
       },
