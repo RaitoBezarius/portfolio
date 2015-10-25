@@ -20,17 +20,28 @@
     flex: 2 0 auto;
 }
 
-.navbar-links > a {
+.navbar-links > li {
     padding: 15px;
     margin: auto;
-    font-family: 'Lato';
-    color: #00A1FF;
-    text-decoration: none;
-    color: #fff;
+    list-style: none;
     background: #007ac9;
 }
 
-.navbar-links > a:hover {
+.navbar-links > li > a {
+    font-family: 'Sanchez';
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-links > li:hover {
     opacity: 0.75;
     transform: scale(1.05);
+}
+
+.navbar-links > li:hover > a.active {
+    border-bottom: 0px;
+}
+
+.navbar-links > li > a.active {
+    border-bottom: 1px dotted #fff;
 }

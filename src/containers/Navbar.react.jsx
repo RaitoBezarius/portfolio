@@ -12,9 +12,9 @@ export default class Navbar extends React.Component {
           <h3 className="navbar-brand-text">Raito Bezarius</h3>
         </section>
         <section className="navbar-links">
-          <Link to="home">About</Link>
-          <Link to="projects">Projects</Link>
-          <Link to="contact">Contact</Link>
+          <li><Link to="home">About</Link></li>
+          <li><Link to="projects">Projects</Link></li>
+          <li><Link to="contact">Contact</Link></li>
         </section>
 			</nav>
 		);
