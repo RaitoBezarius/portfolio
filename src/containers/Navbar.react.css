@@ -7,7 +7,7 @@
 }
 
 .navbar-brand {
-    flex: 2 0 auto;
+    flex: 15 0 auto;
 }
 
 .navbar-brand-text {
@@ -20,9 +20,17 @@
     flex: 2 0 auto;
 }
 
+.navbar-links > li:first-child {
+    margin-left: auto;
+}
+
+.navbar-links > li:last-child {
+    margin-right: auto;
+}
+
 .navbar-links > li {
     padding: 15px;
-    margin: auto;
+    margin-right: 60px;
     list-style: none;
     background: #007ac9;
 }
