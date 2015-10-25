@@ -9,7 +9,7 @@ export default class Contact extends React.Component {
     return (
       <section className="space-overwrite">
         <ImageOverlay imageSrc={require('assets/images/space.jpg')} imageAlt='Space background image'>
-          <View auto column style={{'justify-content': 'flex-start'}} className="contact-box">
+          <View auto column style={{'justifyContent': 'flex-start'}} className="contact-box">
             <hgroup>
               <h1 className="contact-head">Under pressure, you are waiting for directions.</h1>
             </hgroup>

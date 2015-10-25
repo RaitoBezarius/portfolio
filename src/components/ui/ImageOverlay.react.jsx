@@ -5,7 +5,7 @@ import './ImageOverlay.react.css';
 
 export default class ImageOverlay extends React.Component {
   static propTypes = {
-    children: React.PropTypes.array.isRequired,
+    children: React.PropTypes.any.isRequired,
     imageSrc: React.PropTypes.string.isRequired,
     imageAlt: React.PropTypes.string
   }
