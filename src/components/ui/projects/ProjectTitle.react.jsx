@@ -4,7 +4,8 @@ import './ProjectTitle.react.css';
 
 export default class ProjectTitle extends React.Component {
   static propTypes = {
-    children: React.PropTypes.array.isRequired
+    children: React.PropTypes.oneOfType([React.PropTypes.string,
+                                        React.PropTypes.array]).isRequired
   }
 
   render() {

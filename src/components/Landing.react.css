@@ -12,7 +12,7 @@
 .landing-article-head {
     font-family: 'Pacifico';
     font-size: 6em;
-    color: #FF8C0B;
+    color: #00A1FF;
     margin: auto;
 }
 
@@ -20,10 +20,12 @@
     font-family: 'Merriweather';
     font-weight: 600;
     font-size: 2em;
+    color: #fff;
 }
 
 .landing-article-presentation-details {
     font-family: 'Merriweather';
+    color: #fff;
 }
 
 .landing-ability {
