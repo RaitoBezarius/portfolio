@@ -29,3 +29,8 @@
     color: #fff;
     background: #007ac9;
 }
+
+.navbar-links > a:hover {
+    opacity: 0.75;
+    transform: scale(1.05);
+}
