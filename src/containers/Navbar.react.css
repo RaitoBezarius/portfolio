@@ -1,7 +1,6 @@
 .navbar-nav {
     display: flex;
     align-items: center;
-    width: 100%;
     padding: 20px;
     margin: 0 0 20px 0;
     flex-flow: row wrap;
@@ -31,10 +30,6 @@
     margin-left: auto;
 }
 
-.navbar-links > li:last-child {
-    margin-left: auto;
-}
-
 .navbar-links > li {
     padding: 15px;
     margin-right: 60px;
@@ -45,6 +40,9 @@
 @media all and (max-width: 500px) {
     .navbar-links > li {
         margin-right: 30px;
+    }
+    .navbar-links > li:last-child {
+        margin-left: auto;
     }
 }
 
