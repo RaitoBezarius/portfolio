@@ -1,28 +1,18 @@
-.space-overwrite {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
+.app-space-background {
+    background: url(~assets/images/space.jpg) no-repeat center;
+    background-size: cover;
 }
 
-.contact-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    justify-content: center;
+.contact-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-head {
     font-family: 'Merriweather';
     font-size: 3.5em;
     color: #fff;
-    margin: 15% 25% 0 15%;
+    padding: 2em 2em 0 2em;
 }
 
 .contact-cta {
@@ -33,7 +23,15 @@
     color: #fff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    margin: 1rem 40rem 1rem 40rem;
+    margin: 0 5% 20% 60%;
 }
 
+@media all and (max-width: 500px) {
+    .contact-head {
+        font-size: 1.5em;
+    }
+    .contact-cta {
+        margin: 0 5% 20% 35%;
+        font-size: 15px;
+    }
+}
